@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KOREAN FOODIE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Great vibes", cursive}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://images5.alphacoders.com/132/1322094.png");
+  min-height: 90%;
+}
+.yellow{
+color:#000!important;
+background-color:#9e9e9e!important;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">KOREAN<br>RAMEN</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>KOREAN<br>RAMEN</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container yellow w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-light-pink">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'SANDWICH');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-green">SANDWICH</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'SALADS');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-green">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-pale-green">Starter</div>
+      </a>
+     
+    </div>
+
+    <div id="SANDWICH" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>CHICKEN</b> <span class="w3-right w3-tag w3-dark-grey w3-round">INR 250</span></h1>
+      <p class="w3-text-pink">Fresh tomatoes, fresh mozzarella, chicken</p>
+      <hr>
+   
+      <h1><b>CHEESE</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> INR 250</span></h1>
+      <p class="w3-text-pink">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><b>VEGGIE</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> INR 170</span></h1>
+      <p class="w3-text-pink">Fresh tomatoes, mozzarella,peas, onions</p>
+      <hr>
+</div>
+
+
+    <div id="SALADS" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Sangchu Geotjeori</b> <span class="w3-tag w3-grey w3-round">New arrival</span> <span class="w3-right w3-tag w3-dark-grey w3-round">INR 350</span></h1>
+      <p class="w3-text-pink">Special sauce, lentils, radish, carrot</p>
+      <hr>
+   
+      <h1><b>Oi Muchim</b> <span class="w3-right w3-tag w3-dark-grey w3-round">INR 250</span></h1>
+      <p class="w3-text-pink">Cucumber,sesame seeds</p>
+      <hr>
+      
+      <h1><b>Musangchae</b> <span class="w3-right w3-tag w3-dark-grey w3-round">INR 300</span></h1>
+      <p class="w3-text-pink">Raddish,spring onion</p>
+      <hr>
+
+      <h1><b>Hoedupbap</b> <span class="w3-right w3-tag w3-dark-grey w3-round">INR 650</span></h1>
+      <p class="w3-text-pink">fish,carrot,sea weed</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">INR 550</span></h1>
+      <p class="w3-text-pink">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> INR 850</span></h1>
+      <p class="w3-text-pink">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> INR 650</span></h1>
+      <p class="w3-text-pink">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">INR 450</span></h1>
+      <p class="w3-text-pink">Tomatoes and mozzarella</p>
+    </div><br>
+
+  </div>
+   
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-pale-blue w3-whitescale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>At korean Foodie, we invite you to experience the authentic flavors of Korea, right here in the heart of visakhapatnam. Our menu features a variety of traditional Korean dishes, carefully crafted using the freshest ingredients and time-honored recipes passed down through generations.
+
+Whether you're craving sizzling BBQ, flavorful bibimbap, spicy kimchi, or a warm bowl of comforting jjigae, our chefs take pride in delivering an unforgettable dining experience that showcases the rich culinary heritage of Korea.
+
+We believe that dining is not just about food—it's about sharing moments, making memories, and celebrating culture. Our cozy and inviting atmosphere is the perfect place to enjoy a meal with family, friends, or colleagues. Whether you're new to Korean cuisine or a long-time fan, we're here to take you on a delicious journey through Korea's diverse and vibrant food culture.
+
+Thank you for choosing korean Foodie. We look forward to serving you soon and sharing the best of Korean food with you!  </p>
+    <p><strong>The Chef?</strong> mr.joshi himself<img src="\Users\User\Desktop\chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="C:\Users\User\Desktop\location.jpg" style="width:100%">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="C:\Users\User\Desktop\bg.jpg" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-pale-blue w3-whitescale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>get in touch and call us 9054678943</p>
+    <p><span class="w3-tag">yappppp!</span>we offer best quality and quantity dishes. we satisfy our customers with yummy food,Both look and taste.</p>
+    <p class="w3-xxlarge">let's connect!Reserve your spot,Discover our specials,or drop us a note!:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Name" required name="Your Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many guests" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Pick aDate and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Tell us anything special" required name="Message"></p>
+      <p><button class="w3-button w3-grey w3-block" type="submit">SEND SOME MAGIC</button></p>
+    </form>
+  </div>
+</div>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-black";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
